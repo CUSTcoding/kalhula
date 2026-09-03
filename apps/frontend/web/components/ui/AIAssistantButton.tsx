@@ -4,6 +4,10 @@ import { useState } from 'react';
 import { Bot, X, Send, Loader2 } from 'lucide-react';
 import Image from 'next/image';
 
+const AILogo = () => (
+  <Image src="/imgs/kAi.svg" alt="Logo AI" width={60} height={60} />
+);
+
 export default function AIAssistantButton() {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
@@ -116,10 +120,10 @@ export default function AIAssistantButton() {
       {/* Botão Flutuante Fixo */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-transform transform hover:scale-105 flex items-center justify-center"
+        className={`${isOpen ? 'text-black' : 'text-white'}  rounded-full shadow-lg cursor-pointer transition-transform transform hover:scale-105 flex items-center justify-center`}
         aria-label="Abrir assistente de IA"
       >
-        {isOpen ? <X className="w-6 h-6" /> : <Bot className="w-6 h-6" />}
+        {isOpen ? <X className="w-6 h-6" /> : <AILogo />}
       </button>
     </div>
   );
