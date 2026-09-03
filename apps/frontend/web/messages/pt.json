@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "about": "Sobre Nós",
+    "pricing": "Preços",
+    "forUsers": "Para Usuários",
+    "forProfessionals": "Para Profissionais"
+  },
+  "auth": {
+    "professional": "Entrar como Profissional",
+    "user": "Entrar como Usuário"
+  },
+  "language": {
+    "toggle": "EN"
+  },
+  "footer": {
+    "getStartedTitle": "Comece gratuitamente",
+    "pricing": "Preços",
+    "contactSales": "Falar com Vendas",
+    "watchDemos": "Ver Demonstrações",
+    "join": "Junte-se a nós",
+    "supportTitle": "Suporte ao cliente 24/7",
+    "supportDesc": "A nossa equipa de suporte está disponível 24 horas por dia, 7 dias por semana para ajudar. Membros com planos avançados contam com gestores dedicados e garantia de SLA.",
+    "contactSupport": "Contactar Suporte",
+    "brandDesc": "Conectando pessoas aos profissionais certos. Uma plataforma criada para encontrar talentos confiáveis e criar novas oportunidades.",
+    "forUsersTitle": "Para usuários",
+    "findProfessionals": "Encontrar profissionais",
+    "howItWorks": "Como funciona",
+    "reviews": "Avaliações",
+    "security": "Segurança",
+    "forProfessionalsTitle": "Para profissionais",
+    "createProfile": "Criar perfil",
+    "findClients": "Encontrar clientes",
+    "growOnKalhula": "Crescer na Kalhula",
+    "proPlans": "Planos profissionais",
+    "companyTitle": "Empresa",
+    "recruitment": "Recrutar talentos",
+    "jobBoard": "Vagas de emprego",
+    "aboutUs": "Sobre nós",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "cookies": "Cookies",
+    "rights": "Todos os direitos reservados. Criado por",
+    "enterAsClient": "Enter as a Client",
+    "enterAsProfessional": "Enter as a Professional",
+    "talkToTeam": "Talk to the Team"
+  }
+}

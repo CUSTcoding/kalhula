@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "about": "About Us",
+    "pricing": "Pricing",
+    "forUsers": "For Users",
+    "forProfessionals": "For Professionals"
+  },
+  "auth": {
+    "professional": "Login as Professional",
+    "user": "Login as User"
+  },
+  "language": {
+    "toggle": "PT"
+  },
+  "footer": {
+    "getStartedTitle": "Get started for free",
+    "pricing": "Pricing",
+    "contactSales": "Contact Sales",
+    "watchDemos": "Watch Demos",
+    "join": "Join",
+    "supportTitle": "24/7 customer support",
+    "supportDesc": "Our customer support team is available to help 24/7. Enterprise members also receive dedicated account managers and a guaranteed uptime SLA.",
+    "contactSupport": "Contact Support",
+    "brandDesc": "Connecting people with the right professionals. A platform created to find trusted talent and unlock new opportunities.",
+    "forUsersTitle": "For users",
+    "findProfessionals": "Find professionals",
+    "howItWorks": "How it works",
+    "reviews": "Reviews",
+    "security": "Security",
+    "forProfessionalsTitle": "For professionals",
+    "createProfile": "Create profile",
+    "findClients": "Find clients",
+    "growOnKalhula": "Grow on Kalhula",
+    "proPlans": "Pro plans",
+    "companyTitle": "Company",
+    "recruitment": "Recruit top talent",
+    "jobBoard": "Job board",
+    "aboutUs": "About us",
+    "blog": "Blog",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies",
+    "rights": "All rights reserved. Created by"
+  }
+}
