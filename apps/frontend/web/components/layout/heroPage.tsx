@@ -22,8 +22,10 @@ import {
 } from 'lucide-react';
 
 import AIAssistantButton from "../ui/AIAssistantButton";
+import { useTranslations } from "next-intl";
 
 export default function HeroPage() {
+  const t = useTranslations("hero");
   const router = useRouter();
   const [mouseDirection, setMouseDirection] = useState(0);
   const [howItWorksTab, setHowItWorksTab] = useState<'client' | 'professional'>('client');
@@ -45,47 +47,35 @@ export default function HeroPage() {
   };
 
   const backgroundTags = [
-    { text: 'Mecânico', className: 'top-10 right-[30%]', baseOpacity: 0.4, dist: 0.85 },
-    { text: 'Eletricista', className: 'top-10 left-[45%]', baseOpacity: 0.5, dist: 0.5 },
-    { text: 'Encanador', className: 'top-16 left-[30%]', baseOpacity: 0.3, dist: 0.6 },
-    { text: 'Limpador de Piscina', className: 'top-24 left-[15%]', baseOpacity: 0.4, dist: 0.8 },
-    { text: 'Diarista', className: 'top-20 left-[53%]', baseOpacity: 0.5, dist: 0.45 },
-    { text: 'Médico', className: 'top-36 right-[25%]', baseOpacity: 0.3, dist: 0.6 },
-    { text: 'Faxineira', className: 'top-[280px] right-[20%]', baseOpacity: 0.6, dist: 0.65 },
-    { text: 'Babá', className: 'bottom-[60%] left-[20%]', baseOpacity: 0.5, dist: 0.8 },
-    { text: 'Entregador', className: 'bottom-24 left-[42%]', baseOpacity: 0.4, dist: 0.5 },
-    { text: 'Motorista', className: 'bottom-28 right-[28%]', baseOpacity: 0.6, dist: 0.7 },
-    { text: 'Pintor', className: 'top-[320px] left-[18%]', baseOpacity: 0.7, dist: 0.85 },
-    { text: 'Pedreiro', className: 'bottom-16 left-[35%]', baseOpacity: 0.6, dist: 0.5 },
-    { text: 'Jardineiro', className: 'bottom-12 left-[50%] font-medium', baseOpacity: 0.8, dist: 0.4 },
-    { text: 'Chaveiro', className: 'bottom-14 right-[35%]', baseOpacity: 0.5, dist: 0.6 },
-    { text: 'Marceneiro', className: 'bottom-20 left-[25%]', baseOpacity: 0.7, dist: 0.7 },
+    { text: t('tags.0'), className: 'top-10 right-[30%]', baseOpacity: 0.4, dist: 0.85 },
+    { text: t('tags.1'), className: 'top-10 left-[45%]', baseOpacity: 0.5, dist: 0.5 },
+    { text: t('tags.2'), className: 'top-16 left-[30%]', baseOpacity: 0.3, dist: 0.6 },
+    { text: t('tags.3'), className: 'top-24 left-[15%]', baseOpacity: 0.4, dist: 0.8 },
+    { text: t('tags.4'), className: 'top-20 left-[53%]', baseOpacity: 0.5, dist: 0.45 },
+    { text: t('tags.5'), className: 'top-36 right-[25%]', baseOpacity: 0.3, dist: 0.6 },
+    { text: t('tags.6'), className: 'top-[280px] right-[20%]', baseOpacity: 0.6, dist: 0.65 },
+    { text: t('tags.7'), className: 'bottom-[60%] left-[20%]', baseOpacity: 0.5, dist: 0.8 },
+    { text: t('tags.8'), className: 'bottom-24 left-[42%]', baseOpacity: 0.4, dist: 0.5 },
+    { text: t('tags.9'), className: 'bottom-28 right-[28%]', baseOpacity: 0.6, dist: 0.7 },
+    { text: t('tags.10'), className: 'top-[320px] left-[18%]', baseOpacity: 0.7, dist: 0.85 },
+    { text: t('tags.11'), className: 'bottom-16 left-[35%]', baseOpacity: 0.6, dist: 0.5 },
+    { text: t('tags.12'), className: 'bottom-12 left-[50%] font-medium', baseOpacity: 0.8, dist: 0.4 },
+    { text: t('tags.13'), className: 'bottom-14 right-[35%]', baseOpacity: 0.5, dist: 0.6 },
+    { text: t('tags.14'), className: 'bottom-20 left-[25%]', baseOpacity: 0.7, dist: 0.7 },
   ];
 
   const categories = [
-    { name: 'Reparos & Manutenção', icon: Wrench, count: '+1.200 Profissionais' },
-    { name: 'Limpeza e Diária', icon: Sparkles, count: '+850 Profissionais' },
-    { name: 'Pintura & Decoração', icon: Paintbrush, count: '+430 Profissionais' },
-    { name: 'Transporte & Mudanças', icon: Truck, count: '+600 Profissionais' },
+    { name: t('categories.0.name'), icon: Wrench, count: t('categories.0.count') },
+    { name: t('categories.1.name'), icon: Sparkles, count: t('categories.1.count') },
+    { name: t('categories.2.name'), icon: Paintbrush, count: t('categories.2.count') },
+    { name: t('categories.3.name'), icon: Truck, count: t('categories.3.count') },
   ];
 
   const faqs = [
-    {
-      q: 'Como funciona a verificação dos profissionais?',
-      a: 'Todos os profissionais passam por uma checagem rigorosa que inclui verificação de documento de identidade (BI), scanner facial em tempo real e histórico de antecedentes para garantir máxima segurança.'
-    },
-    {
-      q: 'Pago alguma taxa para solicitar orçamentos?',
-      a: 'Não! Para os clientes, buscar e contactar profissionais é 100% gratuito. Você acerta o valor diretamente com o profissional.'
-    },
-    {
-      q: 'Sou profissional, como recebo os pedidos?',
-      a: 'Após o cadastro com BI e scanner de rosto concluídos, seu perfil fica visível para milhares de clientes na sua região. Você recebe notificações instantâneas e fala direto com o cliente.'
-    },
-    {
-      q: 'Existe mensalidade obrigatória para profissionais?',
-      a: 'Não há cobrança de mensalidade prévia para começar a receber contatos na plataforma.'
-    }
+    { q: t('faqs.0.q'), a: t('faqs.0.a') },
+    { q: t('faqs.1.q'), a: t('faqs.1.a') },
+    { q: t('faqs.2.q'), a: t('faqs.2.a') },
+    { q: t('faqs.3.q'), a: t('faqs.3.a') },
   ];
 
   return (
@@ -101,11 +91,11 @@ export default function HeroPage() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="max-w-xl text-4xl font-bold leading-tight text-neutral-900 md:text-6xl">
-            Encontre profissionais de confiança perto de você
+            {t('clientHeading')}
           </h1>
 
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-neutral-800">
-            Descubra profissionais qualificados na sua região e encontre pessoas em quem pode confiar para transformar suas necessidades em soluções.
+            {t('clientSub')}
           </p>
 
           <button
@@ -113,7 +103,7 @@ export default function HeroPage() {
             onClick={() => openAuth('client')}
             className="mt-8 rounded-full bg-black px-8 py-4 font-medium text-white transition hover:scale-105 hover:bg-neutral-800 shadow-lg"
           >
-            Encontrar profissional
+            {t('findProfessionalButton')}
           </button>
         </motion.div>
 
@@ -154,7 +144,7 @@ const moveAmount = 20 + tag.dist * 60;
 
 const xOffset =
 
-mouseDirection === -1 ? moveAmount :
+mouseDirection === -2 ? moveAmount :
 
 mouseDirection === 1 ? -moveAmount :
 
@@ -219,21 +209,13 @@ whileHover={{ scale: 1.08, opacity: 1 }}
 
 <div className="flex items-center text-5xl md:text-7xl font-black text-black tracking-tighter">
 
-K
-
-<span className="text-red-500 ml-1 flex flex-col justify-center gap-6 px-1 leading-[0] text-4xl md:text-5xl">
-
-<span>•</span><span>•</span>
-
-</span>
+<Image src="/imgs/logo.png" alt="Logo da empresa" width={50} height={50} className="mr-2" />
 
 </div>
 
 
 <h1 className="max-w-xl text-2xl font-bold leading-tight text-neutral-900 md:text-4xl">
-
-Aqui, o trabalho vem até você
-
+{t('proHeading')}
 </h1>
 
 </div>
@@ -257,51 +239,32 @@ transition={{ duration: 0.6, ease: 'easeOut' }}
 
 
 <h2 className="text-2xl font-bold text-neutral-900 md:text-4xl tracking-tight">
-
-Seu trabalho merece ser encontrado. Cadastre-se e comece a receber pedidos
-
+  {t('proSubTitle')}
 </h2>
 
 
 <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-800">
-
-Milhares de pessoas procuram profissionais como você todos os dias.
-
-Crie seu perfil, mostre seus serviços e deixe que os clientes venham até você.
-
+  {t('proSubDesc')}
 </p>
 
 
 <div className="mt-8 flex flex-col-reverse sm:flex-row gap-4 w-full sm:w-auto justify-center items-center">
 
 <motion.button
-
-type="button"
-
-onClick={() => openAuth('professional')}
-
-className="w-full sm:w-auto rounded-full bg-white border border-neutral-300 px-8 py-4 font-medium text-neutral-900 transition hover:bg-neutral-50 hover:scale-105 shadow-sm"
-
-animate={{ scale: [1, 1.04, 1] }}
-
-transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
-
-whileHover={{ scale: 1.08 }}
-
+  type="button"
+  onClick={() => openAuth('professional')}
+  className="w-full sm:w-auto rounded-full bg-[var(--color-brand)]/80 cursor-pointer border border-neutral-300 px-8 py-4 font-medium text-neutral-900 transition hover:bg-[var(--color-brand)] hover:scale-105 shadow-sm"
+  animate={{ scale: [1, 1.04, 1] }}
+  transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
+  whileHover={{ scale: 1.08 }}
 >
-
-Cadastrar me Agora
-
+  {t('proCta')}
 </motion.button>
 
 </div>
 
 
-<p className="mt-4 text-sm text-neutral-500">
 
-Sem mensalidade · Perfil pronto em menos de 5 minutos
-
-</p>
 
 </motion.div>
 
@@ -317,26 +280,26 @@ Sem mensalidade · Perfil pronto em menos de 5 minutos
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-orange-500 font-semibold uppercase tracking-wider text-sm">Passo a Passo</span>
-            <h2 className="text-3xl md:text-5xl font-bold mt-2">Como a plataforma funciona</h2>
+            <span className="text-[var(--color-brand)] font-semibold uppercase tracking-wider text-sm">{t('howItWorksLabel')}</span>
+            <h2 className="text-3xl md:text-5xl font-bold mt-2">{t('howItWorksTitle')}</h2>
             
             {/* Toggle Switch */}
             <div className="mt-8 inline-flex p-1 bg-neutral-800 rounded-full border border-neutral-700">
               <button
                 onClick={() => setHowItWorksTab('client')}
                 className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all ${
-                  howItWorksTab === 'client' ? 'bg-orange-500 text-white shadow-md' : 'text-neutral-400 hover:text-white'
+                  howItWorksTab === 'client' ? 'bg-[var(--color-brand)] text-white shadow-md' : 'text-neutral-400 hover:text-white'
                 }`}
               >
-                Para Clientes
+                {t('forClients')}
               </button>
               <button
                 onClick={() => setHowItWorksTab('professional')}
                 className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all ${
-                  howItWorksTab === 'professional' ? 'bg-orange-500 text-white shadow-md' : 'text-neutral-400 hover:text-white'
+                  howItWorksTab === 'professional' ? 'bg-[var(--color-brand)] text-white shadow-md' : 'text-neutral-400 hover:text-white'
                 }`}
               >
-                Para Profissionais
+                {t('forProfessionals')}
               </button>
             </div>
           </motion.div>
@@ -352,16 +315,16 @@ Sem mensalidade · Perfil pronto em menos de 5 minutos
                 className="grid md:grid-cols-3 gap-8"
               >
                 {[
-                  { icon: Search, title: "1. Busque o Serviço", desc: "Digite o que precisa e encontre dezenas de profissionais disponíveis na sua zona." },
-                  { icon: UserCheck, title: "2. Analise Perfis", desc: "Veja avaliações, histórico, biografia e fotos de trabalhos anteriores." },
-                  { icon: MessageSquare, title: "3. Contate Direto", desc: "Entre em contato via Magic Link sem complicações e combine o serviço." }
+                  { icon: Search, title: t('stepsClient.0.title'), desc: t('stepsClient.0.desc') },
+                  { icon: UserCheck, title: t('stepsClient.1.title'), desc: t('stepsClient.1.desc') },
+                  { icon: MessageSquare, title: t('stepsClient.2.title'), desc: t('stepsClient.2.desc') }
                 ].map((step, idx) => (
                   <motion.div 
                     key={idx}
                     whileHover={{ y: -8 }}
                     className="p-8 bg-neutral-800/50 border border-neutral-700/50 rounded-3xl"
                   >
-                    <div className="w-12 h-12 bg-orange-500/10 text-orange-500 rounded-2xl flex items-center justify-center mb-6">
+                    <div className="w-12 h-12 bg-[var(--color-brand)]/10 text-[var(--color-brand)] rounded-2xl flex items-center justify-center mb-6">
                       <step.icon size={24} />
                     </div>
                     <h3 className="text-xl font-bold mb-3">{step.title}</h3>
@@ -379,16 +342,16 @@ Sem mensalidade · Perfil pronto em menos de 5 minutos
                 className="grid md:grid-cols-3 gap-8"
               >
                 {[
-                  { icon: ShieldCheck, title: "1. Registo e Validação", desc: "Insira seus dados, faça upload do BI e conclua o scanner facial para selo de verificação." },
-                  { icon: Zap, title: "2. Receba Pedidos", desc: "Seu perfil fica ativo instantaneamente para clientes que procuram por seu trabalho." },
-                  { icon: Star, title: "3. Construa sua Reputação", desc: "Realize serviços, receba notas 5 estrelas e multiplique o seu faturamento mensal." }
+                  { icon: ShieldCheck, title: t('stepsPro.0.title'), desc: t('stepsPro.0.desc') },
+                  { icon: Zap, title: t('stepsPro.1.title'), desc: t('stepsPro.1.desc') },
+                  { icon: Star, title: t('stepsPro.2.title'), desc: t('stepsPro.2.desc') }
                 ].map((step, idx) => (
                   <motion.div 
                     key={idx}
                     whileHover={{ y: -8 }}
                     className="p-8 bg-neutral-800/50 border border-neutral-700/50 rounded-3xl"
                   >
-                    <div className="w-12 h-12 bg-orange-500/10 text-orange-500 rounded-2xl flex items-center justify-center mb-6">
+                    <div className="w-12 h-12 bg-[var(--color-brand)]/10 text-[var(--color-brand)] rounded-2xl flex items-center justify-center mb-6">
                       <step.icon size={24} />
                     </div>
                     <h3 className="text-xl font-bold mb-3">{step.title}</h3>
@@ -444,12 +407,12 @@ Sem mensalidade · Perfil pronto em menos de 5 minutos
               transition={{ duration: 0.6 }}
             >
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-neutral-200 flex flex-col items-center text-center">
-                <Lock className="text-orange-500 w-8 h-8 mb-3" />
+                <Lock className="text-[var(--color-brand)] w-8 h-8 mb-3" />
                 <h3 className="font-bold text-xl text-neutral-900">100%</h3>
                 <p className="text-xs text-neutral-500 mt-1">Perfis Verificados</p>
               </div>
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-neutral-200 flex flex-col items-center text-center">
-                <Award className="text-orange-500 w-8 h-8 mb-3" />
+                <Award className="text-[var(--color-brand)] w-8 h-8 mb-3" />
                 <h3 className="font-bold text-xl text-neutral-900">Selo BI</h3>
                 <p className="text-xs text-neutral-500 mt-1">Identidade Validada</p>
               </div>
@@ -494,9 +457,9 @@ Sem mensalidade · Perfil pronto em menos de 5 minutos
                 transition={{ duration: 0.4, delay: idx * 0.1 }}
                 whileHover={{ y: -6 }}
                 onClick={() => openAuth('client')}
-                className="p-6 rounded-2xl bg-neutral-50 border border-neutral-100 hover:border-orange-500/30 hover:shadow-lg transition-all cursor-pointer group"
+                className="p-6 rounded-2xl bg-neutral-50 border border-neutral-100 hover:border-[var(--color-brand)]/30 hover:shadow-lg transition-all cursor-pointer group"
               >
-                <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-500 group-hover:text-white transition-colors">
+                <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[var(--color-brand)] group-hover:text-white transition-colors">
                   <cat.icon size={24} />
                 </div>
                 <h3 className="font-bold text-neutral-900 text-lg mb-1">{cat.name}</h3>
