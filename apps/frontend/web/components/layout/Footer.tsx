@@ -16,15 +16,15 @@ export default function Footer() {
               {t("getStartedTitle")}
             </h2>
             <div className="flex flex-col space-y-1 text-sm sm:text-base font-medium text-black">
-              <Link href="#" className="hover:underline">{t("enterAsClient")}</Link>
-              <Link href="#" className="hover:underline">{t("enterAsProfessional")}</Link>
+              <Link href="/auth?type=client" className="hover:underline">{t("enterAsClient")}</Link>
+              <Link href="/auth?type=professional" className="hover:underline">{t("enterAsProfessional")}</Link>
               <Link href="#" className="hover:underline">{t("pricing")}</Link>
               <Link href="#" className="hover:underline">{t("howItWorks")}</Link>
               <Link href="#" className="hover:underline">{t("talkToTeam")}</Link>
             </div>
             <div className="pt-2">
               <Link
-                href="#"
+                href="/auth?type=client"
                 className="inline-flex group relative items-center justify-center gap-2 rounded-lg bg-[var(--color-brand)]/60 px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base font-semibold text-black transition hover:bg-[var(--color-brand)]"
               >
                 <span>{t("join")}</span>
