@@ -1,9 +1,14 @@
 {
-  "nav": {
-    "about": "About Us",
+  "header": { 
+    "about": "About",
+    "aboutSection": { "title": "About us", "description": "Learn more about Kalhula" },
+    "forUsers": { "title": "For users", "findProfessionals": "Find professionals", "howItWorks": "How it works", "reviews": "Reviews", "security": "Security" },
+    "forProfessionals": { "title": "For professionals", "createProfile": "Create profile", "findClients": "Find clients", "growOnKalhula": "Grow on Kalhula", "proPlans": "Pro plans" },
+    "company": { "title": "Company", "recruitment": "Recruit top talent", "jobBoard": "Job board",  "privacy": "Privacy" }, 
+    "contact": "Contact",
     "pricing": "Pricing",
-    "forUsers": "For Users",
-    "forProfessionals": "For Professionals"
+    "login": { "title": "Login", "client": "Login as client", "professional": "Login as professional" },
+    "language": { "toggle": "PT" } 
   },
   "auth": {
     "professional": "Login as Professional",
@@ -15,6 +20,9 @@
   "footer": {
     "getStartedTitle": "Get started for free",
     "pricing": "Pricing",
+    "enterAsClient": "Enter as client",
+    "enterAsProfessional": "Enter as professional",
+    "talkToTeam": "Talk to our team",
     "contactSales": "Contact Sales",
     "watchDemos": "Watch Demos",
     "join": "Join",
@@ -42,5 +50,44 @@
     "terms": "Terms",
     "cookies": "Cookies",
     "rights": "All rights reserved. Created by"
+  }
+
+  ,
+  "hero": {
+    "clientHeading": "Find trusted professionals near you",
+    "clientSub": "Discover qualified professionals in your area and find people you can trust to turn your needs into solutions.",
+    "findProfessionalButton": "Find a professional",
+    "proHeading": "Work comes to you",
+    "proSubTitle": "Your work deserves to be found. Sign up and start receiving requests",
+    "proSubDesc": "Thousands of people look for professionals like you every day. Create your profile, showcase your services, and let customers come to you.",
+    "proCta": "Register Now",
+    "proNote": "No subscription · Profile ready in under 5 minutes",
+    "tags": ["Mechanic","Electrician","Plumber","Pool Cleaner","Cleaner","Doctor","Housekeeper","Babysitter","Delivery","Driver","Painter","Mason","Gardener","Locksmith","Carpenter"],
+    "categories": [
+      {"name":"Repairs & Maintenance","count":"+1,200 professionals"},
+      {"name":"Cleaning & Daily","count":"+850 professionals"},
+      {"name":"Painting & Decoration","count":"+430 professionals"},
+      {"name":"Transport & Moving","count":"+600 professionals"}
+    ],
+    "howItWorksTitle": "How the platform works",
+    "howItWorksLabel": "Step by step",
+    "forClients": "For Clients",
+    "forProfessionals": "For Professionals",
+    "stepsClient": [
+      {"title":"1. Search for Service","desc":"Type what you need and find dozens of available professionals in your area."},
+      {"title":"2. Review Profiles","desc":"See reviews, history, bio and photos of previous work."},
+      {"title":"3. Contact Directly","desc":"Contact via Magic Link without hassle and arrange the service."}
+    ],
+    "stepsPro": [
+      {"title":"1. Registration & Verification","desc":"Submit your details, upload ID and complete face scan for verification badge."},
+      {"title":"2. Receive Requests","desc":"Your profile goes live instantly for customers searching for your work."},
+      {"title":"3. Build Your Reputation","desc":"Deliver services, get 5-star ratings and grow your monthly revenue."}
+    ],
+    "faqs": [
+      {"q":"How does professional verification work?","a":"All professionals undergo a rigorous check including ID verification, real-time face scan and background checks to ensure maximum safety."},
+      {"q":"Do I pay to request quotes?","a":"No. Searching and contacting professionals is free for clients. You negotiate the price directly with the professional."},
+      {"q":"As a professional, how do I receive requests?","a":"After completing ID upload and face scan, your profile becomes visible to thousands of local clients. You receive instant notifications and communicate directly with clients."},
+      {"q":"Is there a mandatory subscription for professionals?","a":"There is no mandatory subscription to start receiving contacts on the platform."}
+    ]
   }
 }

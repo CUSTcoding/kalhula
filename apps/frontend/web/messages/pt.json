@@ -1,9 +1,48 @@
 {
-  "nav": {
-    "about": "Sobre Nós",
+  "header": {
+    "about": "Sobre",
+
+    "aboutSection": {
+      "title": "Sobre nós",
+      "description": "Conheça melhor a Kalhula"
+    },
+
+    "forUsers": {
+      "title": "Para usuários",
+      "findProfessionals": "Encontrar profissionais",
+      "howItWorks": "Como funciona",
+      "reviews": "Avaliações",
+      "security": "Segurança"
+    },
+
+    "forProfessionals": {
+      "title": "Para profissionais",
+      "createProfile": "Criar perfil",
+      "findClients": "Encontrar clientes",
+      "growOnKalhula": "Crescer na Kalhula",
+      "proPlans": "Planos profissionais"
+    },
+
+    "company": {
+      "title": "Empresa",
+      "recruitment": "Recrutar talentos",
+      "jobBoard": "Vagas de emprego",
+      "privacy": "Privacidade"
+    },
+
     "pricing": "Preços",
-    "forUsers": "Para Usuários",
-    "forProfessionals": "Para Profissionais"
+
+    "contact": "Contacto",
+
+    "login": {
+      "title": "Entrar",
+      "client": "Entrar como cliente",
+      "professional": "Entrar como profissional"
+    },
+
+    "language": {
+      "toggle": "EN"
+    }
   },
   "auth": {
     "professional": "Entrar como Profissional",
@@ -42,8 +81,46 @@
     "terms": "Termos",
     "cookies": "Cookies",
     "rights": "Todos os direitos reservados. Criado por",
-    "enterAsClient": "Enter as a Client",
-    "enterAsProfessional": "Enter as a Professional",
-    "talkToTeam": "Talk to the Team"
+    "enterAsClient": "Entrar como cliente",
+    "enterAsProfessional": "Entrar como profissional",
+    "talkToTeam": "Fale com a nossa equipa"
+  }
+  ,
+  "hero": {
+    "clientHeading": "Encontre profissionais de confiança perto de você",
+    "clientSub": "Descubra profissionais qualificados na sua região e encontre pessoas em quem pode confiar para transformar suas necessidades em soluções.",
+    "findProfessionalButton": "Encontrar profissional",
+    "proHeading": "Aqui, o trabalho vem até você",
+    "proSubTitle": "Seu trabalho merece ser encontrado. Cadastre-se e comece a receber pedidos",
+    "proSubDesc": "Milhares de pessoas procuram profissionais como você todos os dias. Crie seu perfil, mostre seus serviços e deixe que os clientes venham até você.",
+    "proCta": "Cadastrar me Agora",
+    "proNote": "Sem mensalidade · Perfil pronto em menos de 5 minutos",
+    "tags": ["Mecânico","Eletricista","Encanador","Limpador de Piscina","Diarista","Médico","Faxineira","Babá","Entregador","Motorista","Pintor","Pedreiro","Jardineiro","Chaveiro","Marceneiro"],
+    "categories": [
+      {"name":"Reparos & Manutenção","count":"+1.200 Profissionais"},
+      {"name":"Limpeza e Diária","count":"+850 Profissionais"},
+      {"name":"Pintura & Decoração","count":"+430 Profissionais"},
+      {"name":"Transporte & Mudanças","count":"+600 Profissionais"}
+    ],
+    "howItWorksTitle": "Como a plataforma funciona",
+    "howItWorksLabel": "Passo a Passo",
+    "forClients": "Para Clientes",
+    "forProfessionals": "Para Profissionais",
+    "stepsClient": [
+      {"title":"1. Busque o Serviço","desc":"Digite o que precisa e encontre dezenas de profissionais disponíveis na sua zona."},
+      {"title":"2. Analise Perfis","desc":"Veja avaliações, histórico, biografia e fotos de trabalhos anteriores."},
+      {"title":"3. Contate Direto","desc":"Entre em contato via Magic Link sem complicações e combine o serviço."}
+    ],
+    "stepsPro": [
+      {"title":"1. Registo e Validação","desc":"Insira seus dados, faça upload do BI e conclua o scanner facial para selo de verificação."},
+      {"title":"2. Receba Pedidos","desc":"Seu perfil fica ativo instantaneamente para clientes que procuram por seu trabalho."},
+      {"title":"3. Construa sua Reputação","desc":"Realize serviços, receba notas 5 estrelas e multiplique o seu faturamento mensal."}
+    ],
+    "faqs": [
+      {"q":"Como funciona a verificação dos profissionais?","a":"Todos os profissionais passam por uma checagem rigorosa que inclui verificação de documento de identidade (BI), scanner facial em tempo real e histórico de antecedentes para garantir máxima segurança."},
+      {"q":"Pago alguma taxa para solicitar orçamentos?","a":"Não! Para os clientes, buscar e contactar profissionais é 100% gratuito. Você acerta o valor diretamente com o profissional."},
+      {"q":"Sou profissional, como recebo os pedidos?","a":"Após o cadastro com BI e scanner de rosto concluídos, seu perfil fica visível para milhares de clientes na sua região. Você recebe notificações instantâneas e fala direto com o cliente."},
+      {"q":"Existe mensalidade obrigatória para profissionais?","a":"Não há cobrança de mensalidade prévia para começar a receber contatos na plataforma."}
+    ]
   }
 }
