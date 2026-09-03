@@ -101,7 +101,7 @@ export default function HeroPage() {
           <button
             type="button"
             onClick={() => openAuth('client')}
-            className="mt-8 rounded-full bg-black px-8 py-4 font-medium text-white transition hover:scale-105 hover:bg-neutral-800 shadow-lg"
+            className="mt-8 rounded-full bg-[var(--brand-primary)] px-8 py-4 font-medium text-white transition hover:scale-105 hover:bg-neutral-800 shadow-lg"
           >
             {t('findProfessionalButton')}
           </button>
