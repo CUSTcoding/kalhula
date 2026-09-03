@@ -7,10 +7,14 @@ import { useState, useTransition } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { ChevronDown } from "lucide-react";
 
+
 export default function Header() {
   const t = useTranslations("header");
   const locale = useLocale();
   const router = useRouter();
+  const openAuth = (type: 'client' | 'professional') => {
+    router.push(`/auth?type=${type}`);
+  };
   const pathname = usePathname();
 
   const [aboutOpen, setAboutOpen] = useState(false);
@@ -327,13 +331,13 @@ export default function Header() {
                   "
                 >
                   <MegaMenuLink
-                    href="/login/user"
+                    href="/auth?type=client"
                     label={t("login.client")}
                     onClick={closeMenus}
                   />
 
                   <MegaMenuLink
-                    href="/login/professional"
+                    href="/auth?type=professional"
                     label={t("login.professional")}
                     onClick={closeMenus}
                   />
